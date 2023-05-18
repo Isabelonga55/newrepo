@@ -1,3 +1,7 @@
+/*html{
+  
+  display: block;
+}*/
 
 discosdorados {
   width: 100px;
@@ -102,9 +106,9 @@ p {
 
 /* Espacio2 es donde se ubica el carrusel, el boton flotante, el ancho y largo del mismo para que todo su contenido este compacto*/
 .espacio2{
-  width: 100%;
+  width: 3000px;
  height: 500px;
- background-color: #C39A07;
+ background-color: #fff0d0;
    display: flex;
   flex-flow: column;
   flex-wrap: column;
