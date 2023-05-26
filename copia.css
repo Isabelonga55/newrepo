@@ -21,7 +21,7 @@ body{
 header{
  width: 100%;
  height: 80px;
- background-color: rgb(41, 0, 55);
+ background-color:#eae4e9;
   border-radius: 0px 0px 0px 150px;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ header .botones li{
   margin: 0 50px;
 }
 header .botones li a{
-  color: #ffc8dd;
+  color: #ed5c93;
   text-decoration: none;
   font-family: 'K2D';
   font-weight: 500;
@@ -50,7 +50,7 @@ header .botones li a{
   font-size: 25px;
 }
 header .botones li a:hover{
-  color: white;
+  color: rgb(48, 0, 179);
 }
 header .buscador{
   position: relative;
@@ -63,7 +63,7 @@ header .buscador input{
   left: 0;
   width: 100%;
   height: 100%;
-  color: #ffc8dd;
+  color: #e1427f;
   outline: none;
   border: 1px solid black;
   border-radius: 4px;
@@ -75,7 +75,7 @@ p {
   margin-left: 10px;
    font-family: 'Jockey One';
      font-size: 55px;
-   color:#ffc8dd;
+   color:#e1427f;
   text-align: center;
    padding-top: 15px;
 }
@@ -204,7 +204,7 @@ h2{
 .pelis{
   width: 100%;
  height: 480px;
- background-color: #C39A07;
+ background-color: #c6aa43;
    display: flex;
   flex-flow: column;
   flex-wrap: column;
@@ -214,7 +214,7 @@ h2{
 .cont-carrusel{
  width: 100%;
   height: auto;
-  background-color: #C39A07;
+  background-color: #fad2e1;
   display:grid;
   grid-template-rows: 420px 35px;
   grid-template-columns:  1fr 40px 40px 40px 40px 40px 1fr;
@@ -344,7 +344,7 @@ input:nth-of-type(5):checked ~ main#items-carrusel{
 .espacio3{
   width: 100%;
  height: 550px;
- background-color: grey;
+ background-color: #e2ece9;
    display: flex;
   flex-flow: column;
   flex-wrap: column;
