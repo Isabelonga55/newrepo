@@ -2,7 +2,177 @@
   
   display: block;
 }*/
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+/* h6 {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 20px;
+  white-space: nowrap;
+} */
+.nosotros{
+ width: 100%;
+ color: black;
+ font-size: 40px;
+display: flex;
 
+}
+.formulario{
+  width: 100%;
+  height: 90px;
+  background-color: white;
+    display: flex;
+   flex-flow: column;
+   flex-wrap: column;
+   justify-content: center;
+   align-items: center;
+}
+.horizontal-container{
+ width:auto;
+  word-wrap: break-word;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+}
+
+ 
+
+
+body{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #ab4493; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #ab4493;
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+/* creado por javiniguez.com, Julio 2019 */
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 discosdorados {
   width: 100px;
   height: 100%;
@@ -26,7 +196,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
- padding: 15px 100px;
+ padding: 15px 5px;
   z-index: 10;
 }
 header .botones{
@@ -53,9 +223,10 @@ header .botones li a:hover{
   color: rgb(48, 0, 179);
 }
 header .buscador{
-  position: relative;
+  position: absolute;
+  left: 84%;
   width: 300px;
-  height: 40px;
+  height: 50px;
 }
 header .buscador input{
   position: absolute;
@@ -106,7 +277,7 @@ p {
 
 /* Espacio2 es donde se ubica el carrusel, el boton flotante, el ancho y largo del mismo para que todo su contenido este compacto*/
 .espacio2{
-  width: 3000px;
+  width: 100%;
  height: 500px;
  background-color: #fff1e6;
    display: flex;
@@ -189,7 +360,7 @@ h2{
   color: black;
   text-align: center;
 }
-.novedades{
+.empresa{
   width: 100%;
  height: 90px;
  background-color: white;
@@ -198,10 +369,11 @@ h2{
   flex-wrap: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 /* cont-carrusel, main,pelis y item explican  las funciones que hace cada elemento o imagen ubicados en el espacio, con un alto y ancho especificos. Tambien la estructura y animaciones que hace cada boton el el espacio*/
-.pelis{
+/* .pelis{
   width: 100%;
  height: 480px;
  background-color: #c6aa43;
@@ -210,19 +382,15 @@ h2{
   flex-wrap: column;
   justify-content: center;
   align-items: center;
-}
+} */
 .cont-carrusel{
  width: 100%;
   height: auto;
   background-color: #fad2e1;
-  display:grid;
-  grid-template-rows: 420px 35px;
-  grid-template-columns:  1fr 40px 40px 40px 40px 40px 1fr;
-  align-items: center;
-  justify-items:center;
+
 }
 
-main#items-carrusel{
+/* main#items-carrusel{
   width:100vw;
   height: 100vh;
   grid-row: 1 / 2;
@@ -237,9 +405,9 @@ main#items-carrusel{
   --middle: 3;
   --posicion: 1;
   pointer-events: none;
-}
+} */
 
-.item{
+/* .item{
   width: 1000px;
   height: 420px;
   background-color: #C39A07;
@@ -253,14 +421,14 @@ main#items-carrusel{
   transition: all 0.25s linear;
   transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
   z-index: calc((var(--posicion) - var(--abs)));
-}
+} */
 
-.item:nth-of-type(1){
+/* .item:nth-of-type(1){
   --offset: 1;
   background-color: black;
    background-color: black;
-  background-image: url('https://i.blogs.es/16e585/breaking-bad/1366_2000.jpg');
-   background-size: 100%;
+  background-image: url('agendakwai.png');
+   background-size: 40%;
   background-position: 0px -20px;
   background-repeat: no-repeat;
 }
@@ -269,15 +437,15 @@ main#items-carrusel{
   --offset: 2;
   background-color: black;
    background-color: black;
-  background-image: url('https://www.rockandpop.cl/wp-content/uploads/2021/06/the-boys-1.jpg');
-   background-size: 100%;
+  background-image: url('cuaderno.jpeg');
+   background-size: 40%;
   background-position: 0px -20px;
   background-repeat: no-repeat;
 }
 .item:nth-of-type(3){
   --offset: 3;
   background-color: black;
-  background-image: url('https://occ-0-1567-2433.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWl6gmeKf8xy9fHDqwIaNOeNOX_DoJ1T2xnIRQE0Cn23w2vQGHX98swU0L0HKcW5Ay6NQJt5y2_neuMro7JBcQBN2AqQlBwuxHUX.jpg?r=1ff');
+  background-image: url('');
    background-size: 100%;
   background-position: 0px -80px;
   background-repeat: no-repeat;
@@ -299,7 +467,7 @@ main#items-carrusel{
    background-size: 100%;
   background-position: 0px -10px;
   background-repeat: no-repeat;
-}
+} */
 
 /* Input son la cantidad de imagenes que tiene que mover, para que asi no sea descontinuo y sea extraño el movimiento */
 input:nth-of-type(1){
@@ -343,7 +511,7 @@ input:nth-of-type(5):checked ~ main#items-carrusel{
 /*Espacio3 es la seccion, el color de fondo donde se ubica el trailer de la semana, sirve para orientaren especifico el apartado y que no se salga de los limites */
 .espacio3{
   width: 100%;
- height: 550px;
+ height: 600px;
  background-color: #e2ece9;
    display: flex;
   flex-flow: column;
@@ -449,4 +617,9 @@ footer{
   opacity: 0.3;
   text-align: center;
    font-size: 30px;
+}
+@media(max-width: 768px){
+  .horizontal-container{
+    word-wrap: break-word;
+  }
 }
