@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html> 
+<br> 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Jockey One"/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="copia.css">
   <!--Hecho por: Isabella Rodriguez Roque-->
   <title>Agendas IsaRoRo</title>
 </head>
-<body>
+
   <!-- Seccionamiento del header, se incluye el titulo, los botones y la barra de búsqueda -->
   <header>
-    <div class="logo">
-      <img src="logo copia.png" alt="Logo" width="120px" height="110px">
-      <h1 class="titulo">Agendas IsaRoRo</h1>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo copia.png" alt="Logo" width="90px" height="85px">
+        <h1 class="titulo">Agendas IsaRoRo</h1>
+      </div>
+      <div class="buttons">
+      <ul class="botones"> 
+        <li><a href="#empresa">Nosotros</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li><a href="#">Proximamente</a></li>
+      </ul>
     </div>
-    <div class="buttons">
-    <ul class="botones"> 
-      <li><a href="#empresa">nuestra empresa</a></li>
-      <li><a href="#">Contactos</a></li>
-      <li><a href="#">Proximamente</a></li>
-    </ul>
-  </div>
-    <div class="buscador">
-      <input type="text" placeholder="Buscador">
-      <i class="fa fa-search" aria-hidden="true"></i>
+      <div class="buscador">
+       <input class="search" type="text" placeholder="Buscar"> 
+       <i class="fa fa-search" style="font-size:24px"></i> 
+      </div>
     </div>
+    
   </header>
-
-  <!-- Espacio1 es el espacio en blanco desde el título hasta el carrusel -->
-  <section class="espacio1">
-  </section>
-
+</br>
   <!-- Espacio2 es donde se ubica el carrusel de imágenes -->  
   <section class="espacio2">
     <div class="pestana-sticky">
@@ -51,49 +50,47 @@
       </ul>
     </div>
   </section> 
-
+</br>
+</br>
   <!-- Novedades es el espacio donde se ubica el título de dicho nombre -->
   <section id="nuestra empresa">
-    <h2 class="nuestra empresa">nuestra empresa</h2>
-
-  
-  <!-- Pelis es el carrusel con botones para las series nuevas de las plataformas de streaming-->
+    <h2 class="nuestra empresa">Nosotros</h2>
   <section class="cont-carrusel">
-  <!-- <h1>Agendas de discos: personalización que refleja tu esencia.</h1> -->
- 
-  <div class="horizontal-container"><p class="nosotros"> Mi empresa de agendas de discos nació de una idea emocionante. Quería crear algo especial: agendas con discos en lugar de argollas.<br> Le conté la idea a mi mamá y ella me apoyó. Juntos, creamos agendas que te permiten sacar y volver a poner las hojas fácilmente, sin dañarlas.¡Únete a nuestra historia y descubre cómo nuestras agendas te ayudarán a organizar tus ideas de manera divertida!
-  </p></div>
- 
-    </main> 
+  <div class="horizontal-container">
+    <p class="nosotros"> 
+      Mi empresa de agendas de discos nació de una idea emocionante. Quería crear algo especial: agendas con discos en lugar de argollas.<br> Le conté la idea a mi mamá y ella me apoyó. Juntos, creamos agendas que te permiten sacar y volver a poner las hojas fácilmente, sin dañarlas.¡Únete a nuestra historia y descubre cómo nuestras agendas te ayudarán a organizar tus ideas de manera divertida!
+  </p>
+</div>
   </section>
+</section>
 
   <!-- Espacio3 ubica el trailer de la semana y la reproducción del mismo -->
   <section class="espacio3">
       <!-- Formulario -->
-      
+    </br>
+    </br>
         <h2 class="formulario">Formulario de Contacto</h2>
         <form action="submeter-formulario.php" method="post">
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required><br>
+          <input class="input-formulario" type="text" id="nombre" name="nombre" required><br>
   
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br>
+          <input class="input-formulario" type="email" id="email" name="email" required><br>
   
           <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono"><br>
+          <input class="input-formulario" type="tel" id="telefono" name="telefono"><br>
   
           <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea><br>
+          <textarea class="textarea-formulario" id="mensaje" name="mensaje" required></textarea><br>
   
-          <input type="submit" value="Enviar">
+          <input class="button-formulario"  type="submit" value="Enviar">
         </form>
       </div>
     </section>
   
-    <h3 class="novedades1"></h3>
-  </section>
-
   <!-- Galeria es la sección de series animadas de cada plataforma de streaming, con un interesante movimiento -->
+</br>
+</br>
   <section class="galeria">
     <li><img src="calendario.png" alt=""></li>
     <li><img src="argollado.jpg" alt=""></li>
@@ -104,7 +101,7 @@
 
   <!-- Seccionamiento de la última parte de la página, el footer con sus respectivas clases -->
   <footer>
-    <img src="logo copia.png" alt="" class="logo">
+    <img src="logo copia.png" class="logo" height="140px">
     <div class="iconosfootercontenido">
       <a href="https://es-la.facebook.com" class="iconosfooter"></a>
       <a href="" class="iconosfooter"></a>
