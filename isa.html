@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mi página web</title>
-    <style>
-      /* Aquí va el CSS */
-      header {
-        background-color: #333;
-        color: white;
-        padding: 20px;
+<head>
+  <title>Inventario de Bloques de Plastilina</title>
+</head>
+<body>
+  <h1>Inventario de Bloques de Plastilina</h1>
+  
+  <table id="inventario-table">
+    <thead>
+      <tr>
+        <th>Color</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <button onclick="mostrarBloquesPorComprar()">Mostrar Bloques por Comprar</button>
+
+  <script>
+    // Paso 1: Definir la estructura de datos para el inventario
+    let inventario = [];
+
+    // Paso 2: Función para agregar bloques al inventario
+    function agregarBloque(color, cantidad) {
+      let bloqueExistente = inventario.find(function(bloque) {
+        return bloque.color === color;
+      });
+
+      if (bloqueExistente) {
+        bloqueExistente.cantidad += cantidad;
+      } else {
+        inventario.push({
+          color: color,
+          cantidad: cantidad
+        });
+      }
+    }
+
+    // Paso 5: Función para mostrar el inventario completo en la página
+    function mostrarInventario() {
+      let inventarioTable = document.getElementById("inventario-table");
+      let tbody = inventarioTable.querySelector("tbody");
+      tbody.innerHTML = ""; // Limpiar el contenido actual de la tabla
+
+      inventario.forEach(function(bloque) {
+        let row = document.createElement("tr");
+
+        let colorCell = document.createElement("td");
+        colorCell.textContent = bloque.color;
+        row.appendChild(colorCell);
+
+        let cantidadCell = document.createElement("td");
+        cantidadCell.textContent = bloque.cantidad;
+        row.appendChild(cantidadCell);
+
+        tbody.appendChild(row);
+      });
+    }
+
+    // Paso 6: Función para mostrar los bloques por comprar en una alerta
+    function mostrarBloquesPorComprar() {
+      let bloquesPorComprar = inventario.filter(function(bloque) {
+        return bloque.cantidad <= 0;
+      });
+
+      let resultado = "Debes comprar los siguientes bloques de plastilina:\n";
+      if (bloquesPorComprar.length === 0) {
+        resultado += "No hay bloques por comprar.";
+      } else {
+        bloquesPorComprar.forEach(function(bloque) {
+          resultado += `- Color: ${bloque.color}\n`;
+        });
       }
 
-      section {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
+      window.alert(resultado);
+    }
 
-      section h2 {
-        color: #333;
-      }
+    // Ejemplo de uso
+    agregarBloque("Rojo", 5);
+    agregarBloque("Azul", 3);
+    agregarBloque("Verde", 0);
+    agregarBloque("Amarillo", 0);
+    agregarBloque("Naranja", 1);
+    agregarBloque("Rosado", 1);
+    agregarBloque("Blanco", 2);
+    agregarBloque("Negro", 0);
+    agregarBloque("Rojo", 2); // Agregar más bloques rojos
 
-      footer {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Mi página web</h1>
-    </header>
-    <section>
-      <h2>Código JavaScript</h2>
-    <script>
-      // Aquí va el código JavaScript
-      var c = colorsplastilina
-      roja=10
-      azul=5
-      amarillo=7
-      verde=10
-      morado=7
-      rosado=10
-      marron=5
-      naranja=5
-      negro=10
-      blanco=10
-      gris=10
-      window.alert(10<c);
-      
-    </script>
-  </body>
+    mostrarInventario(); // Mostrar el inventario inicial en la página
+  </script>
+</body>
 </html>
