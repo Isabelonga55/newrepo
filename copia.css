@@ -1,170 +1,148 @@
-/*html{
-  
-  display: block;
-}*/
-
-discosdorados {
-  width: 100px;
-  height: 100%;
-}
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 /* Url de las tipografias de la pagina */
 @import url('https://fonts.googleapis.com/css?family=Jockey One');
 @import url('https://fonts.googleapis.com/css?family=K2D');
 
-/* Body es el fondo de la pagina, sin especificar margenes */
-body{
-  background-color: rgb(255, 255, 255);
+* {
+  font-family: 'Noto Sans', sans-serif;
   margin: 0px;
+  padding: 0px;
 }
-
 /*Header es todo el apartado de las interacciones con los botonoes, su organizacion, la barra de busqueda y la ubicacion de cada uno. */
 header{
- width: 100%;
- height: 80px;
- background-color: rgb(41, 0, 55);
+  width: auto;
+  height: 80px;
+  background-color: #eae4e9;
   border-radius: 0px 0px 0px 150px;
+   display: flex;
+   justify-content: space-between;
+ }
+.nav-container{
+  width: auto;
+  display: flex;
+  align-content: space-between;
+ }
+
+ .logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.titulo{
+  
+    font-size: 25px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    background-color:transparent;
+    color: #ab4493;
+    font-size: 25px;
+    font-family: 'Jockey One';
+  
+}
+
+h1{
+	font-size: 25px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+  background-color:transparent;
+	color: #ab4493;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  font-family: 'Jockey One';
+}
+
+
+.buttons{
   display: flex;
   align-items: center;
-  justify-content: space-between;
- padding: 15px 100px;
-  z-index: 10;
 }
-header .botones{
-  color: white;
-display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px 0;
-}
-header .botones li{
+.botones{
+  display: flex;
   list-style: none;
-  margin: 0 50px;
+ margin-left: 20px;
 }
-header .botones li a{
-  color: #ffc8dd;
+.botones li{
+  margin: 0 25px;
+}
+.botones li a{
+  color: #ed5c93;
   text-decoration: none;
   font-family: 'K2D';
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 25px;
+  font-weight: 800;
+  font-size: 20px;
 }
-header .botones li a:hover{
-  color: white;
+.botones li a:hover{
+  color: rgb(48, 0, 179);
 }
-header .buscador{
-  position: relative;
-  width: 300px;
-  height: 40px;
-}
-header .buscador input{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #ffc8dd;
-  outline: none;
-  border: 1px solid black;
-  border-radius: 4px;
-  padding: 0 10px 0 45px;
-}
-p {
+.buscador{
   display: flex;
-  align-items: center;
-  margin-left: 10px;
-   font-family: 'Jockey One';
-     font-size: 55px;
-   color:#ffc8dd;
-  text-align: center;
-   padding-top: 15px;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 10px;
 }
 
-/* Contenido es el boton flotante sobrepuesto en el carrusel */
-.contenido{
+.buscador .search{
+  background-color: #fbfbfb; 
+	height: 30px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+}
+.fa-search{
+  color: #ab4493;
+  margin-left: 5px;
+}
+
+ /* Espacio2 es donde se ubica el carrusel, el boton flotante, el ancho y largo del mismo para que todo su contenido este compacto*/ */
+.espacio2{
   width: 100%;
+  background-color: #d4b69e;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contenido{
  height: 30px;
  background-color:#ffc8dd;
-   display: flex;
-  flex-flow: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Espacio1 determina el color, el ancho y largo del seccionamiento entre el header y el carrusel*/
-.espacio1{
-  width:100%;
- height: 30px;
- background-color: white;
-   display: flex;
-  flex-flow: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Espacio2 es donde se ubica el carrusel, el boton flotante, el ancho y largo del mismo para que todo su contenido este compacto*/
-.espacio2{
-  width: 3000px;
- height: 500px;
- background-color: #fff1e6;
-   display: flex;
-  flex-flow: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: lato;
-}
-
-/* h1 y pestaña sticky es el contenido/texto del boton flotante, se determina la ubicacion y que tan grande es */
-h1 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 20px;
-    color: black;
-  font-family: 'Jockey One';
-  font-size: 36px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .pestana-sticky{
   width: 350px;
   height: 60px;
-  left: 0;
   background-color: #eee4e1;
-  position: absolute;
-  top: 20%;
+  /* position: absolute;
+  top: 20%; */
   border-radius: 30px 30px 30px 0px;
 }
 
 /* Slider-frame, son las caracteristicas de las imagenes dentro del carrusel, el movimiento, ejecutar el tiempo y el ajuste a cada una */
 .slider-frame {
-	width: 900px;
-    height: 900px;
-	margin:0px auto 0;
+	max-width: 1200px;
 	overflow: hidden;
 }
 
 .slider-frame ul {
 	display: flex;
-	padding: 0;
-	width: 400%;
-
-	animation: slide 10s infinite alternate ease-in-out;
+	width: 300%;
+  animation: slide 10s infinite alternate ease-in-out;
 }
 
 .slider-frame li {
-	width: 100%;
+	width: 65%;
 	list-style: none;
 }
 
 .slider-frame img {
-	width: 100%;
+	width: 75%;
 }
 
 /* Keyframes es la animacion*/
@@ -175,21 +153,138 @@ h1 {
 	25% {margin-left: -100%;}
 	45% {margin-left: -100%;}
 
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
+	50% {margin-left: -200%;} 
+	 70% {margin-left: -200%;} 
 
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
 
-/* h2 y "Novedades" es la ubcicacion, la tipografia y el subtitulo de la seccion valga la redundancia: novedades*/
 h2{
   font-family: 'Jockey One';
     font-size: 65px;
   color: black;
   text-align: center;
 }
-.novedades{
+
+.horizontal-container{
+  width:auto;
+   word-wrap: break-word;
+   height: 500px;
+  display: flex;
+   justify-content: center;
+ }
+
+.nosotros{
+ width: auto;
+ color: black;
+ font-size: 40px;
+ display: flex;
+ font-family: 'Jockey One';
+ color:#e1427f;
+  text-align: center;
+}
+
+.cont-carrusel{
+  width: 100%;
+   height: auto;
+   background-color: #fad2e1;
+ 
+ }
+
+/*Espacio3 es la seccion, el color de fondo donde se ubica el trailer de la semana, sirve para orientaren especifico el apartado y que no se salga de los limites */
+.espacio3{
+  width: 100%;
+ height: 700px;
+ background-color: #e2ece9;
+   display: flex;
+  flex-flow: column;
+  flex-wrap: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-formulario{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+.textarea-formulario{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+.button-formulario{
+	height: 45px;  	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+
+/* .empresa{
   width: 100%;
  height: 90px;
  background-color: white;
@@ -198,31 +293,23 @@ h2{
   flex-wrap: column;
   justify-content: center;
   align-items: center;
-}
+  
+} */
 
 /* cont-carrusel, main,pelis y item explican  las funciones que hace cada elemento o imagen ubicados en el espacio, con un alto y ancho especificos. Tambien la estructura y animaciones que hace cada boton el el espacio*/
-.pelis{
+/* .pelis{
   width: 100%;
  height: 480px;
- background-color: #C39A07;
+ background-color: #c6aa43;
    display: flex;
   flex-flow: column;
   flex-wrap: column;
   justify-content: center;
   align-items: center;
-}
-.cont-carrusel{
- width: 100%;
-  height: auto;
-  background-color: #C39A07;
-  display:grid;
-  grid-template-rows: 420px 35px;
-  grid-template-columns:  1fr 40px 40px 40px 40px 40px 1fr;
-  align-items: center;
-  justify-items:center;
-}
+} */
 
-main#items-carrusel{
+
+/* main#items-carrusel{
   width:100vw;
   height: 100vh;
   grid-row: 1 / 2;
@@ -237,9 +324,9 @@ main#items-carrusel{
   --middle: 3;
   --posicion: 1;
   pointer-events: none;
-}
+} */
 
-.item{
+/* .item{
   width: 1000px;
   height: 420px;
   background-color: #C39A07;
@@ -253,14 +340,14 @@ main#items-carrusel{
   transition: all 0.25s linear;
   transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
   z-index: calc((var(--posicion) - var(--abs)));
-}
+} */
 
-.item:nth-of-type(1){
+/* .item:nth-of-type(1){
   --offset: 1;
   background-color: black;
    background-color: black;
-  background-image: url('https://i.blogs.es/16e585/breaking-bad/1366_2000.jpg');
-   background-size: 100%;
+  background-image: url('agendakwai.png');
+   background-size: 40%;
   background-position: 0px -20px;
   background-repeat: no-repeat;
 }
@@ -269,15 +356,15 @@ main#items-carrusel{
   --offset: 2;
   background-color: black;
    background-color: black;
-  background-image: url('https://www.rockandpop.cl/wp-content/uploads/2021/06/the-boys-1.jpg');
-   background-size: 100%;
+  background-image: url('cuaderno.jpeg');
+   background-size: 40%;
   background-position: 0px -20px;
   background-repeat: no-repeat;
 }
 .item:nth-of-type(3){
   --offset: 3;
   background-color: black;
-  background-image: url('https://occ-0-1567-2433.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWl6gmeKf8xy9fHDqwIaNOeNOX_DoJ1T2xnIRQE0Cn23w2vQGHX98swU0L0HKcW5Ay6NQJt5y2_neuMro7JBcQBN2AqQlBwuxHUX.jpg?r=1ff');
+  background-image: url('');
    background-size: 100%;
   background-position: 0px -80px;
   background-repeat: no-repeat;
@@ -299,7 +386,7 @@ main#items-carrusel{
    background-size: 100%;
   background-position: 0px -10px;
   background-repeat: no-repeat;
-}
+} */
 
 /* Input son la cantidad de imagenes que tiene que mover, para que asi no sea descontinuo y sea extraño el movimiento */
 input:nth-of-type(1){
@@ -340,24 +427,7 @@ input:nth-of-type(5):checked ~ main#items-carrusel{
   --posicion: 5;
   }
 
-/*Espacio3 es la seccion, el color de fondo donde se ubica el trailer de la semana, sirve para orientaren especifico el apartado y que no se salga de los limites */
-.espacio3{
-  width: 100%;
- height: 550px;
- background-color: grey;
-   display: flex;
-  flex-flow: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
-}
-/*h3 son las caracteristicas que lleva el subtitulo "trailer de la semana", se define la tipografia, el tamaño entre otros */
-h3{
-  font-family: 'Jockey One';
-    font-size: 60px;
-  color: black;
-  text-align: center;
-}
+
 
 /*Galeria- li inclido "hover" determinan la ubicacion, las funciones, el tiempo, las animaciones y los colores del apartado de series animadas mas relevantes en los servicios de streaming */
 .galeria{
@@ -382,8 +452,8 @@ h3{
 
 /*Footer define la altura, el fondo, el ancho, su orientacion para luego ser unicadas las redes sociales y algunos botones en especifico */
 footer{
-   width:100%;
-  height: 300px;
+  width: auto;
+  height: 250px;
   position: absolute;
   background-color:black;
   display: flex;
@@ -393,11 +463,7 @@ footer{
   align-items: center;
   flex-direction: column;
 }
-/*Logo e iconos, tanto estas funciones como sus derivaciones, explican su ubicacion, cual es su objetivo, las imagenes que llama de la web y como estas deben estar en determinado espacio  */
-.logo{
- height: 140px;
-  margin-bottom: 1rem;
-}
+
 .iconosfootercontenido, .menufootercontenido{
   display: flex;
   justify-content: center;
@@ -449,4 +515,24 @@ footer{
   opacity: 0.3;
   text-align: center;
    font-size: 30px;
+}
+@media(max-width: 768px){
+  .titulo{
+    font-size: 20px;
+  }
+  .botones li{
+    margin: 0 15px;
+  }
+  .botones li a{
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .menufootercontenido{
+    font-size: 20px;
+  }
+
+  .copyright{
+     font-size: 15px;
+  }
 }
