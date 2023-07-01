@@ -1,108 +1,123 @@
 <!DOCTYPE html>
-<html> 
- <head>
+<br> 
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Jockey One"/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="copia.css">
-   <!--Hecho por: Isabella Rodriguez Roque-->
-   <title>Agendas IsaRoRo</title>
- </head>
-  <body>
+  <!--Hecho por: Isabella Rodriguez Roque-->
+  <title>Agendas IsaRoRo</title>
+</head>
 
-   <!-- Seccionamiento del header, se incluye el titulo, los botoenes y la barra de busqueda -->
-   <header>
-    <img src="logo copia.png" alt="Logo" width="80px" height="80px">
-     <p class="titulo">Agendas IsaRoRo</p>
-     <ul class="botones"> 
-       <li><a href="#productos">Productos</a></li>
-       <li><a href="#">Contactos</a></li>
-       <li><a href="#">Plataformas de Streaming</a></li>
-     </ul>
-     <div class="buscador">
-       <input type="text" placeholder="Buscador">
-       <i class="fa fa-search" aria-hidden="true"></i>
-     </div>
-     </header>
-
-  <!-- Espacio1 es el espacio en blanco desde el titulo hasta el carrusel -->
-    <section class="espacio1">
-    </section>
-
-  <!-- Espacio2 es donde se ubica el carrusel de imagenes -->  
-    <section class="espacio2">
-      <div class="pestana-sticky">
-         <div  class="contenido"> <h1>NUESTRA FABRICA</h1></div>
+  <!-- Seccionamiento del header, se incluye el titulo, los botones y la barra de búsqueda -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo copia.png" alt="Logo" width="90px" height="85px">
+        <h1 class="titulo">Agendas IsaRoRo</h1>
+      </div>
+      <div class="buttons">
+      <ul class="botones"> 
+        <li><a href="#empresa">Nosotros</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li><a href="#">Proximamente</a></li>
+      </ul>
     </div>
-      <div class="slider-frame">
+      <div class="buscador">
+       <input class="search" type="text" placeholder="Buscar"> 
+       <i class="fa fa-search" style="font-size:24px"></i> 
+      </div>
+    </div>
+    
+  </header>
+</br>
+  <!-- Espacio2 es donde se ubica el carrusel de imágenes -->  
+  <section class="espacio2">
+    <div class="pestana-sticky">
+      <div class="contenido">
+        <h1>Productos</h1>
+      </div>
+    </div>
+    <div class="slider-frame">
       <ul>
         <li><img src="agendaelaborada.webp" alt=""></li>
         <li><img src="discosdorados.jpeg" alt=""></li>
         <li><img src="potadas.jpeg" alt=""></li>
-        <li><img src="portadas.jpeg" alt=""></li>
+        <li><img src="agendaisa.jpeg" alt=""></li>
         <li><img src="separadores.jpeg" alt=""></li>
         <li><img src="sepacolors.webp" alt=""></li>
-        </ul>
-        </div>
-    </section> 
+      </ul>
+    </div>
+  </section> 
+</br>
+</br>
+  <!-- Novedades es el espacio donde se ubica el título de dicho nombre -->
+  <section id="nuestra empresa">
+    <h2 class="nuestra empresa">Nosotros</h2>
+  <section class="cont-carrusel">
+  <div class="horizontal-container">
+    <p class="nosotros"> 
+      Mi empresa de agendas de discos nació de una idea emocionante. Quería crear algo especial: agendas con discos en lugar de argollas.<br> Le conté la idea a mi mamá y ella me apoyó. Juntos, creamos agendas que te permiten sacar y volver a poner las hojas fácilmente, sin dañarlas.¡Únete a nuestra historia y descubre cómo nuestras agendas te ayudarán a organizar tus ideas de manera divertida!
+  </p>
+</div>
+  </section>
+</section>
 
-    <!-- Novedades es el espacio donde se ubica el titulo de dicho nombre -->
-    <section id="productos">
-      <h2 class="productos">Productos</h2>
+  <!-- Espacio3 ubica el trailer de la semana y la reproducción del mismo -->
+  <section class="espacio3">
+      <!-- Formulario -->
+    </br>
+    </br>
+        <h2 class="formulario">Formulario de Contacto</h2>
+        <form action="submeter-formulario.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input class="input-formulario" type="text" id="nombre" name="nombre" required><br>
+  
+          <label for="email">Email:</label>
+          <input class="input-formulario" type="email" id="email" name="email" required><br>
+  
+          <label for="telefono">Teléfono:</label>
+          <input class="input-formulario" type="tel" id="telefono" name="telefono"><br>
+  
+          <label for="mensaje">Mensaje:</label>
+          <textarea class="textarea-formulario" id="mensaje" name="mensaje" required></textarea><br>
+  
+          <input class="button-formulario"  type="submit" value="Enviar">
+        </form>
+      </div>
     </section>
+  
+  <!-- Galeria es la sección de series animadas de cada plataforma de streaming, con un interesante movimiento -->
+</br>
+</br>
+  <section class="galeria">
+    <li><img src="calendario.png" alt=""></li>
+    <li><img src="argollado.jpg" alt=""></li>
+    <li><img src="journal.jpg" alt=""></li>
+    <li><img src="agendamini.png" alt=""></li>
+    <li><img src="" alt=""></li>
+  </section>
 
-    <!-- Pelis es el carrusel con botones para las series nuevas de las plataformas de streaming-->
-      <section class="cont-carrusel">
-     <input type="radio" name="posicion"/> 
-      <input type="radio" name="posicion"/>
-      <input type="radio" name="posicion"
-      checked />
-      <input type="radio" name="posicion"/>
-      <input type="radio" name="posicion"/>
-        <main id="items-carrusel">
-           <div class="item"> </div>
-          <div class="item"> </div>
-          <div class="item"> </div>
-          <div class="item"> </div>
-          <div class="item"> </div>
-
-        </main> 
-   </section>
-
-      <!-- Espacio3 ubica el trailer de la semana y la reproduccion del mismo -->
-     <section class="espacio3">
-    <h3 class="novedades1">Trailer de la semana</h3>
-    <iframe width="800" height="420" src="https://www.youtube.com/embed/yyGetSp7CIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-       </section>
-
-      <!-- Galeria es la seccion de series animadas de cada plataforma de streaming, con un interesante movimiento -->
-     <section class="galeria">
-        <li><img  src="https://as01.epimg.net/meristation/imagenes/2021/04/08/noticias/1617855911_622089_1617856002_sumario_normal.jpg" alt=""></li>
-        <li><img  src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/G76UFFNJ2FM2BAOJHVCD66QXAU.jpg" alt=""></li>
-       <li><img  src="https://i1.whakoom.com/large/18/19/053cecdb4ca34cbaaf3e83d06e61181a.jpg" alt=""></li>
-       <li><img  src="https://www.enelradar.com/__export/1658944371201/sites/elimparcial/img/2022/07/27/aaaabswn_bvco0d3c_axfdptuehyz_1axp9o9iw_clgw-s5zytdj42_ul0-88rgu5dbaqldrnpozbodioy8v49h1bk6-k2umz13zqwioofbe9ryzh0gymg3ovnmvjyqfzeblnqtxfa.jpg_372284823.jpg" alt=""></li><li><img  src="http://cdn.shopify.com/s/files/1/0065/0995/3079/products/image_ed452340-7683-4dfc-a24c-2fa8d585a61e.webp?v=1648756362" alt=""></li>
-        </section>
-
-     <!--Seccionamiento de la ultima parte de la pagina, el footer con sus respectivas clases -->
-     <footer>
-       <img src="https://cdn.create.vista.com/api/media/medium/470947334/stock-vector-antique-cinema-camera-gold-plated?token=" alt="" class="logo">
-       <div class="iconosfootercontenido">
-         <a href="" class="iconosfooter"></a>
-         <a href="" class="iconosfooter"></a>
-         <a href="" class="iconosfooter"></a>
-         <a href="" class="iconosfooter"></a>
-       <ul class="menufootercontenido">
-         <li class="menufooter">Legal</li>
-         <li class="menufooter">Cookies</li>
-         <li class="menufooter">Privacidad</li>
-         <li class="menufooter">Streaming</li>
-         <li class="menufooter">Top</li>
-         </ul>
-         <span class="copyright"> 2023, Koveny Movies. All rights reserved.</span>
-       </div>
-    </footer>
-
-  </body>
-
+  <!-- Seccionamiento de la última parte de la página, el footer con sus respectivas clases -->
+  <footer>
+    <img src="logo copia.png" class="logo" height="140px">
+    <div class="iconosfootercontenido">
+      <a href="https://es-la.facebook.com" class="iconosfooter"></a>
+      <a href="" class="iconosfooter"></a>
+      <a href="" class="iconosfooter"></a>
+      <a href="" class="iconosfooter"></a>
+      <ul class="menufootercontenido">
+        <li class="menufooter">Legal</li>
+        <li class="menufooter">Cookies</li>
+        <li class="menufooter">Privacidad</li>
+        <li class="menufooter">Streaming</li>
+        <li class="menufooter">Top</li>
+      </ul>
+      <span class="copyright"> 
+        2023, Koveny Movies. All rights reserved.
+      </span>
+    </div>
+  </footer>
+</body>
 </html>
