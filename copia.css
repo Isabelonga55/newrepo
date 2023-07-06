@@ -2,7 +2,9 @@
 /* Url de las tipografias de la pagina */
 @import url('https://fonts.googleapis.com/css?family=Jockey One');
 @import url('https://fonts.googleapis.com/css?family=K2D');
-
+body{
+  background-color: #eee4e1;
+}
 * {
   font-family: 'Noto Sans', sans-serif;
   margin: 0px;
@@ -12,7 +14,7 @@
 header{
   width: auto;
   height: 80px;
-  background-color: #eae4e9;
+  background-color:#654321;
   border-radius: 0px 0px 0px 150px;
    display: flex;
    justify-content: space-between;
@@ -34,7 +36,7 @@ header{
     text-align: letf; 
     padding-bottom: 20px; 
     background-color:transparent;
-    color: #ab4493;
+    color: 	#e8bd7b;
     font-size: 25px;
     font-family: 'Jockey One';
   
@@ -66,35 +68,15 @@ h1{
   margin: 0 25px;
 }
 .botones li a{
-  color: #ed5c93;
+  color: #ffcda2;
   text-decoration: none;
   font-family: 'K2D';
   font-weight: 800;
   font-size: 20px;
 }
 .botones li a:hover{
-  color: rgb(48, 0, 179);
+  color: rgb(255, 162, 0);
 }
-.buscador{
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  margin-top: 10px;
-}
-
-.buscador .search{
-  background-color: #fbfbfb; 
-	height: 30px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #ab4493; 
-}
-.fa-search{
-  color: #ab4493;
-  margin-left: 5px;
-}
-
  /* Espacio2 es donde se ubica el carrusel, el boton flotante, el ancho y largo del mismo para que todo su contenido este compacto*/ */
 .espacio2{
   width: 100%;
@@ -118,7 +100,7 @@ h1{
 .pestana-sticky{
   width: 350px;
   height: 60px;
-  background-color: #eee4e1;
+  background-color: #c58d7c;
   /* position: absolute;
   top: 20%; */
   border-radius: 30px 30px 30px 0px;
@@ -170,33 +152,40 @@ h2{
 .horizontal-container{
   width:auto;
    word-wrap: break-word;
-   height: 500px;
+   height: 600px;
   display: flex;
    justify-content: center;
+   flex-direction: column;
  }
 
 .nosotros{
  width: auto;
- color: black;
  font-size: 40px;
  display: flex;
  font-family: 'Jockey One';
- color:#e1427f;
+ color:#000;
   text-align: center;
 }
 
 .cont-carrusel{
   width: 100%;
    height: auto;
-   background-color: #fad2e1;
- 
+   background-color: #dbd1ce;
+   display:flex;
+   align-items:center;
+   flex-direction:column;
+   
+ }
+ .boton_plantillas{
+  display: flex;
+justify-content: center;
  }
 
 /*Espacio3 es la seccion, el color de fondo donde se ubica el trailer de la semana, sirve para orientaren especifico el apartado y que no se salga de los limites */
 .espacio3{
   width: 100%;
  height: 700px;
- background-color: #e2ece9;
+ background-color: #eee4e1;;
    display: flex;
   flex-flow: column;
   flex-wrap: column;
@@ -284,7 +273,7 @@ label{
 
 
 
-/* .empresa{
+.empresa{
   width: 100%;
  height: 90px;
  background-color: white;
@@ -294,7 +283,7 @@ label{
   justify-content: center;
   align-items: center;
   
-} */
+} 
 
 /* cont-carrusel, main,pelis y item explican  las funciones que hace cada elemento o imagen ubicados en el espacio, con un alto y ancho especificos. Tambien la estructura y animaciones que hace cada boton el el espacio*/
 /* .pelis{
@@ -536,3 +525,42 @@ footer{
      font-size: 15px;
   }
 }
+.seccion_formulario{
+  font-size: 30px;
+  align-items: first baseline;
+}
+.plantillas{
+  background-color: #ed5c93;
+  width: auto;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #dbd1ce;
+  text-align: center;
+  white-space: nowrap;
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0; /* Eliminar el espacio en blanco */
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: #fff;
+}
+
+.whatsapp-float i {
+  line-height: 60px;
+  font-size: 30px; /* Ajustar el tamaño del icono */
+}
+
