@@ -1,4 +1,5 @@
-const frutero = require('./node.js')
-frutero.forEach(item => {
+const {frutas,dinero} = require('./node.js')
+frutas.forEach(item => {
   console.count(item)
 });
+console.log(dinero)

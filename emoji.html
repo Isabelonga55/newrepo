@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji globo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .globo {
+            font-size: 40px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="globo" id="globo">&#127758;</div>
+
+    <script>
+        var globo = document.getElementById("globo");
+
+        window.addEventListener("keydown", function(event) {
+            if (event.code === "ArrowUp") {
+                if (globo.clientHeight < 120) {
+                    globo.style.fontSize = (parseFloat(getComputedStyle(globo).fontSize) + 10) + "px";
+                } else {
+                    document.getElementById("error").innerHTML = "El globo es demasiado grande.";
+                }
+            } else if (event.code === "ArrowDown") {
+                if (globo.clientHeight > 15) {
+                    globo.style.fontSize = (parseFloat(getComputedStyle(globo).fontSize) - 10) + "px";
+                } else {
+                    document.getElementById("error").innerHTML = "El globo es demasiado pequeño.";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

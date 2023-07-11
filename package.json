@@ -1,0 +1,27 @@
+{
+  "name": "proyectonode",
+  "version": "1.0.0",
+  "description": "este proyecto es para aprender node,js",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabela2009/proyectonode.js.git"
+  },
+  "keywords": [
+    "proyecto",
+    "js",
+    "proyecto",
+    "uclass",
+    "proyecto",
+    "ucamp"
+  ],
+  "author": "isabella rodriguez roque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabela2009/proyectonode.js/issues"
+  },
+  "homepage": "https://github.com/isabela2009/proyectonode.js#readme"
+}

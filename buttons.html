@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modo oscuro</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+       .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+       .boton {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+       .boton:hover {
+            background-color: #0069d9;
+        }
+
+       .boton-activo {
+            background-color: #dc3545;
+        }
+
+       .boton-activo:hover {
+            background-color: #c82333;
+        }
+
+       .modo-oscuro {
+            background-color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a mi página</h1>
+        <p>Este es un ejemplo de cómo podrías crear una página con un botón que cambie entre modo claro y modo oscuro.</p>
+        <button class="boton" id="boton-modo">Modo claro</button>
+    </div>
+
+    <script>
+        var botonModo = document.getElementById("boton-modo");
+        var body = document.body;
+        var modoActual = "claro";
+
+        botonModo.addEventListener("click", function() {
+            if (modoActual === "claro") {
+                body.classList.remove("modo-claro");
+                body.classList.add("modo-oscuro");
+                botonModo.innerHTML = "Cambiar a modo claro";
+                botonModo.classList.remove("boton-activo");
+                modoActual = "oscuro";
+            } else {
+                body.classList.remove("modo-oscuro");
+                body.classList.add("modo-claro");
+                botonModo.innerHTML = "Cambiar a modo oscuro";
+                botonModo.classList.add("boton-activo");
+                modoActual = "claro";
+            }
+        });
+    </script>
+</body>
+</html>
