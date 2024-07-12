@@ -146,6 +146,7 @@ h2{
   font-family: 'Jockey One';
     font-size: 65px;
   color: black;
+  background-color:white;
   text-align: center;
 }
 
@@ -420,10 +421,12 @@ input:nth-of-type(5):checked ~ main#items-carrusel{
 
 /*Galeria- li inclido "hover" determinan la ubicacion, las funciones, el tiempo, las animaciones y los colores del apartado de series animadas mas relevantes en los servicios de streaming */
 .galeria{
-  display: flex;
   width: 100%;
-  height: 750px;
-  justify-content: center;
+  height: auto;
+ 
+  display:flex;
+  align-items:center;
+  flex-direction:column;
 }
 .galeria li{
    width: 0px;
@@ -431,6 +434,8 @@ input:nth-of-type(5):checked ~ main#items-carrusel{
   object-fit: cover;
   opacity: .9;
   transition: .5s ease;
+   justify-content: space-between;
+
 }
 .galeria li:hover{
   cursor: crosshair;
@@ -443,8 +448,8 @@ input:nth-of-type(5):checked ~ main#items-carrusel{
 footer{
   width: auto;
   height: 250px;
-  position: absolute;
-  background-color:black;
+  position:relative;
+  background-color:rgb(99, 55, 19);
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
